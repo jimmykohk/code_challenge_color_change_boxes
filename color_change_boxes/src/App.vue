@@ -12,14 +12,14 @@ import Box from './components/Box.vue'
         @box-clicked="detectBoxClicked" />
       <div
         class="col flex flex-col">
-        <Box 
+        <Box
           ref="box2"
           message="2"
           @box-clicked="detectBoxClicked" />
         <div
           class="col flex flex-fixed-row flex-mobile-first">
           <Box
-            class="col" 
+            class="col"
             message="3"
             ref="box3"
             @box-clicked="detectBoxClicked" />
@@ -45,6 +45,7 @@ import Box from './components/Box.vue'
         message="7"
         ref="box7"
         @box-clicked="detectBoxClicked" />
+        
       <div class="col">
         <div class="flex flex-fixed-col">
           <Box message="8" ref="box8" @box-clicked="detectBoxClicked" />
