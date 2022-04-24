@@ -40,7 +40,7 @@ export default{
   methods: {
     // Detect box is clicked
     boxClicked(){
-      this.$emit("boxClicked")
+      this.$emit("box-clicked")
     },
 
     // Generate the color code 0 - 255 randomly
