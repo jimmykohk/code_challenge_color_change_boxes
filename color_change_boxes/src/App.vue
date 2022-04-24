@@ -4,6 +4,7 @@ import Box from './components/Box.vue'
 
 <template>
   <main>
+    <!-- Upper part -->
     <div class="flex flex-row">
       <Box 
         class="col"
@@ -32,6 +33,8 @@ import Box from './components/Box.vue'
       </div>
     </div>
 
+
+    <!-- Lower part -->
     <div class="mt-1 flex flex-fixed-row flex-wrap">
       <div class="col">
         <div class="flex flex-fixed-col">
@@ -68,6 +71,7 @@ export default{
   },
   methods: {
     detectBoxClicked(){
+      // Change all boxes' color
       this.boxes.forEach(box=>this.$refs[box].changeBoxColor())
     }
   }
@@ -75,13 +79,11 @@ export default{
 </script>
 
 <style>
-@import './assets/base.css';
-
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
+  font-family: -apple-system, 'Segoe UI', sans-serif;
   font-weight: normal;
 }
 
@@ -98,7 +100,6 @@ export default{
 .flex-fixed-row { flex-direction: row !important; }
 .flex-fixed-col { flex-direction: column !important; }
 .col { flex: 1 }
-
 
 @media (max-width: 600px){
   .flex-row { flex-direction: column; }

@@ -38,14 +38,17 @@ export default{
     this.changeBoxColor()
   },
   methods: {
+    // Detect box is clicked
     boxClicked(){
       this.$emit("boxClicked")
     },
 
+    // Generate the color code 0 - 255 randomly
     generateRandomColorCode(){
       return parseInt(Math.random() * 255)
     },
 
+    // Change the box color randomly
     changeBoxColor(){
       this.red = this.generateRandomColorCode()
       this.green = this.generateRandomColorCode()
